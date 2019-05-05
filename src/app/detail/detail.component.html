@@ -1,0 +1,248 @@
+
+<section>
+  <div class="container singledeal">
+    <div class="singledealcolleft">
+      
+      
+      <h1 class="large">{{Deal.ResourceDescription}}</h1>
+      <div class="singledealrow">
+        
+          <div id="deal-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              
+                <li *ngFor="let dealPic of Deal.DealPics" [id]="dealPic.Indicator"></li>
+              
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              
+                <div *ngFor="let dealPic of Deal.DealPics" [id]="dealPic.PicId" class="item">
+                  <img  [src]="dealPic.Url" alt="{{dealPic.ResourceDescription}}">
+                </div>
+              
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#deal-carousel" role="button" data-slide="prev">
+              <span class="slider-arrow slider-arrow-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#deal-carousel" role="button" data-slide="next">
+              <span class="slider-arrow slider-arrow-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+    <div class="singledealcolright">
+        <!-- Deal is Live -->
+        <div class="singledealbuy">
+          <div class="singledealbuytop    ">
+          
+              <a href="" data-toggle="modal" data-target="#bundleModalGift" title="" class="btn btn-info"><span class="ico16 singledeal-gift"></span>Buy as a Gift</a>
+          
+
+            
+              <div *ngIf="Deal.IsLimited" class="singledealtimer">
+                <span class="ico16 singledeal-timer"></span>
+                
+                  <div class="singledealtickerlimitedtime">Limited For a {{Deal.Limited}} days only</div>
+                
+
+              </div>
+            
+
+            
+              <div class="singledealrow">
+                <div class="singledealbought"><span class="ico16 singledeal-arrow"></span>{{Deal.PurchasesCount}} bought!</div>
+              </div>
+            
+          </div>
+          <div class="dealcta dealspotlightcta" style="">
+            <div class="singledealprice">
+              <span class="singledealcurrency singledealcurrencyspotlight">AED</span>
+              
+                <span class="singledealpriceold singledealpriceoldspotlight">220</span>
+              
+              <span class="singledealpricenew singledealpricenewspotlight">89</span>
+            </div>
+            
+              
+                <a class="singledealspotlightbtn" data-toggle="modal" (click)="OpenModalOptions()">
+                  <span class="btnlabel">Buy Now</span>
+                  <span class="btnsep"></span>
+                  <span class="ico54 ico54-ok"></span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+
+      
+    </div>
+  </div>
+</section>
+<!--<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+  <path id="accordion-plus" d="M783,2761h-6v-6h-1v6h-6v1h6v6h1v-6h6v-1Z" transform="translate(-770 -2755)"/>
+</svg>-->
+
+<div class="product-info">
+  <div class="content-wrapper">
+    <div>
+    </div>
+    <ul class="accordion js--accordion">
+      <li class="accordion__item">
+        <a class="accordion__title" (click)="openClose_conditions()">
+          <span id="condition_svg" class="svgIconPlus">
+            <svg width="13" height="13" viewBox="0 0 13 13">
+              <path id="accordion-plus" d="M783,2761h-6v-6h-1v6h-6v1h6v6h1v-6h6v-1Z" transform="translate(-770 -2755)"/>
+            </svg>
+          </span>
+          Conditions
+        </a>
+        <div id="conditions_content" class="accordion__content rich-text" style="display: none">
+          <div *ngFor="let condition of Deal.Conditions" >
+            <h3>{{condition.ResourceName}}</h3>
+            <p>{{condition.ResourceDescription}}</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<section style="display:none">
+<div class="singledealpanel companyinfo">
+          <small>The Company</small>
+          <h3>Zulekha Hospital LLC</h3>
+          <p>
+            
+
+                
+                
+                  <b>Zulekha Hospital Sharjah<a href="http://maps.google.com/?q=25.3676577,55.4055933" title="View in Maps" target="_blank"><span class="ico16 ico16-map-blue"></span></a></b>
+                
+
+
+              <br>
+              Sharjah<br>
+              600524442<br>
+              
+              Al Zahra Street<br>
+
+              <br>
+            
+          </p>
+          
+        </div>
+   </section>
+<div id="ModalOptions" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+  <div class="modal-header">
+    <span class="close" (click)="closeModalOptions()">&times;</span>
+    <h2>Choose Your Option</h2>
+  </div>
+  <div class="modal-body">
+    <div class="modalcartrow">
+          <div class="modalcartcol1">Option 1:&nbsp;Dubai by Night City tour</div>
+          <div class="modalcartcol2">AED 59.0</div>
+          <div class="modalcartcol3">
+          
+              <a  class="btn btn-primary add-to-cart" (click)="OpenModalCard()">Add to Cart</a>
+          
+          </div>
+        </div>
+  </div>
+</div>
+
+</div>
+<div id="ModalCard" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+  <div class="modal-header">
+    <span class="close" (click)="closeModalCard()">&times;</span>
+    <h2>Your Shopping Cart</h2>
+  </div>
+  <div class="modal-body">
+    <div class="modalrow"><div class="modalcartcol1"></div>
+          <div class="modalcartcol2">Price</div>
+          <div class="modalcartcol4"><span class="hidemobile">Quantity</span><span class="hideweb">Qty</span></div>
+          <div class="modalcartcol2">Amount</div>
+          <div class="modalcartcol3"></div>
+    </div>
+    <div id="cart-items" data-empty-msg="Your cart is empty"><div class="modalcartrow"><div class="modalcartcol1">Option 1:&nbsp;Dubai by Night City tour</div><div class="modalcartcol2">AED 59.0</div><div class="modalcartcol4">1</div><div class="modalcartcol2">AED 59</div><div class="modalcartcol3"><a href="#" class="remove-from-cart" data-id="78441"><span class="ico16 ico16-trash"></span></a></div></div></div>
+    <div class="modalrow">
+          <div class="text-right">
+            <span class="modeltotallabel">Order Total:</span> <span id="stotal" class="modeltotalprice leftx9 rightx6">AED 59</span>
+          </div>
+          <div class="modalnotes">
+            <p>Please note the following:</p>
+            <ul>
+              <li>* Deal might expire before checkout and no longer be available</li>
+              <li>* Deal price may change due to market fluctuations</li>
+              <li>* Final checkout price may vary depending on your chosen payment method and available store credit</li>
+              <li>All prices shown are inclusive of VAT where applicable</li>
+            </ul>
+          </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <div class="modalbottom text-right">
+            <a href="#" data-dismiss="modal" class="modelcontinueshopping rightx6">Continue Shopping</a>
+            <button type="button" class="btn btn-primary checkout-btn" style="display: inline-block;">Checkout</button>
+          </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<div id="plp">
+  <div>
+    <section id="category-banner-wrapper" class="_9ePPVKT">
+      <!--<h1 class="_2Pqhc_O">
+        {{Type.Category.ResourceName}}
+      </h1>
+      <h3 class="_2Pqhc_O">
+        {{Type.ResourceName}}
+      </h3>-->
+    </section>
+    <div class="_27-R9uX">
+      <div class="_3JNRYc8">
+        <div class="zCgWNEA">
+          <div class="_3-pEc3l" data-auto-id="productList">
+            <section>
+              <article *ngFor="let deal of Type.Deals" id="product-10023558" class="_2oHs74P">
+                <a class="_3x-5VWa" routerLink='/detail/{{deal.Id}}'>
+                  <div class="_1FN5N-P">
+                    <img [src]="deal.DealPics[0].Url">
+                  </div>
+                  <div class="_2Raol8i">
+                    <div class="_10-bVn6">
+                      <div>
+                        <p>
+                          {{deal.ResourceName}}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="_6RF5CVD">
+                    <span class="_3iq1GRC"></span>
+                    <span class="_342BXW_">£85.00</span>
+                  </p>
+                </a>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

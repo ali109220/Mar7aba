@@ -1,0 +1,67 @@
+<div id="renderTarget">
+  <div>
+    <div>
+      <div class="sc-gzVnrw fNWXQM">
+        <div class="sc-bxivhb eoDxQP">
+          <i class="sc-htpNat eSNZce"></i>
+        </div>
+        <!--<a class="sc-bZQynM lmDZDG">
+          <div class="sc-EHOje icxTDc">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+            <path d="M1.9 1.9l21.2 21.2M23.1 1.9L1.9 23.1"></path>
+            </svg>
+          </div>
+        </a>-->
+        <div class="sc-bdVaJa hIwvdW">
+          <div class="sc-bwzfXH dnDIkE">
+            <div>
+              <h1 class="sc-ckVGcZ dQQxYO">
+                <span>Sign up to Marhaba</span>
+              </h1>
+              <div>
+                <input id="_userName" class="username sc-cvbbAY bEXeAl" name="userName" type="text" placeholder="UserName" autocapitalize="none" autocorrect="off" [(ngModel)]="user.UserName" (input)="onChangeInput('userName',$event.target.value)">
+                <p id="errorMessage_userName" style="color: red;display: none;margin-left: 10px;
+                font-size: 13px;">{{errorMessage_userName}}</p>
+              </div>
+              <div>
+                <input id="_firstName" class="username sc-cvbbAY bEXeAl" name="firstName" type="text" placeholder="First Name" autocapitalize="none" autocorrect="off" [(ngModel)]="user.FirstName" (input)="onChangeInput('firstName',$event.target.value)">
+                <p id="errorMessage_firstName" style="color: red;display: none;margin-left: 10px;
+                font-size: 13px;">{{errorMessage_firstName}}</p>
+              </div>
+              <div>
+                <input id="_email" class="username sc-cvbbAY bEXeAl" name="email" type="email" placeholder="Email Address" autocapitalize="none" autocorrect="off" [(ngModel)]="user.Email" (input)="onChangeInput('email',$event.target.value)">
+                <p id="errorMessage_email" style="color: red;display: none;margin-left: 10px;
+                font-size: 13px;">{{errorMessage_email}}</p>
+              </div>
+              <div>
+                <input id="_password" class="password sc-cvbbAY cPzClN" name="password" type="password" placeholder="Password" [(ngModel)]="user.Password" (input)="onChangeInput('password',$event.target.value)">
+                <p id="errorMessage_password" style="color: red;display: none;margin-left: 10px;
+                font-size: 13px;">{{errorMessage_password}}</p>
+              </div>
+              <div>
+                <input id="_repassword" class="password sc-cvbbAY cPzClN" name="repassword" type="password" placeholder="Confirm Password" [(ngModel)]="_RePassword" (input)="onChangeInput('repassword',$event.target.value)">
+                <p id="errorMessage_repassword" style="color: red;display: none;margin-left: 10px;
+                font-size: 13px;">{{errorMessage_repassword}}</p>
+              </div>
+              <button class="sc-eNQAEJ rAVIf sc-kAzzGY cEEZnk" data-test="register-button" (click)="rigesterWithMarhaba()">
+                <span>Register</span>
+              </button>
+            </div>
+            <div data-test="oauth-register">
+            </div>
+          </div>
+        </div>
+        <div class="sc-VigVT lkMunw">
+          <div class="sc-gqjmRU cyqrMH">
+            <a class="sc-jTzLTM YyxQW sc-htoDjs cVyllw" data-test="Log_in" routerLink="/login">
+            <span>Log in</span>
+            </a>
+            <a class="sc-gZMcBi dApcPT" margin="none" data-test="google">
+              <span>Log in with Google</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,191 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+._9ePPVKT {
+    padding: 0;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+._2Pqhc_O, ._9ePPVKT {
+    text-align: center;
+    width: 100%;
+}
+._27-R9uX {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+._2Pqhc_O {
+    color: #2d2d2d;
+    font-family: futura-pt,sans-serif;
+    font-size: 24px;
+    letter-spacing: 1.7px;
+    font-weight: 700;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    height: 40px;
+    margin: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 12px;
+}
+._3JNRYc8 {
+    height: 100%;
+    width: 100%;
+    max-width: 512px;
+    margin: 0 auto;
+}
+@media (min-width: 768px){
+._3JNRYc8 {
+    box-sizing: border-box;
+    max-width: 1366px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+}
+@media (min-width: 1024px){
+._3JNRYc8 {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+}
+.zCgWNEA {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 12px 36px;
+}
+@media (min-width: 768px){
+.zCgWNEA {
+    padding: 0 0 36px;
+}
+}
+._3pvwV0k {
+    font-family: futura-pt,sans-serif;
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 20px;
+    color: #999;
+    text-align: center;
+    margin: 0 0 4px;
+    padding: 16px 0 0;
+}
+._3-pEc3l {
+    position: relative;
+    display: block;
+    overflow: visible;
+}
+._2oHs74P {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    margin: 12px 0 1px 6px;
+}
+@media (min-width: 768px){
+._2oHs74P:nth-of-type {
+    margin-left: 0;
+}
+}
+@media (min-width: 1024px){
+._2oHs74P:nth-of-type {
+    margin-left: 0;
+}
+}
+
+@media (min-width: 387px){
+._2oHs74P {
+    width: calc(50% - 12px / 2);
+}
+}
+@media (min-width: 768px){
+._2oHs74P {
+    width: calc(33.333% - 24px / 3);
+}
+}
+@media (min-width: 1024px){
+._2oHs74P {
+    width: calc(25% - 36px / 4);
+}
+}
+._3x-5VWa {
+    display: block;
+    text-decoration: none;
+}
+._1FN5N-P {
+    position: relative;
+    font-size: 0;
+    margin-bottom: 9px;
+    background-color: #eee;
+    display: block;
+}
+._2Raol8i {
+    font-family: futura-pt,sans-serif;
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 20px;
+    color: #2d2d2d;
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: 40px;
+    margin-bottom: 12px;
+}
+._6RF5CVD {
+    font-family: futura-pt,sans-serif;
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 20px;
+    color: #2d2d2d;
+    margin: 0;
+    height: 40px;
+}
+._1FN5N-P img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+}
+._10-bVn6 {
+    overflow: hidden;
+    height: 44px;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+._10-bVn6>:first-child {
+    float: right;
+    width: 100%;
+    margin-left: -1px;
+}
+._10-bVn6 p {
+    margin: 0;
+}
+._3iq1GRC {
+    display: inline-block;
+}
+._342BXW_ {
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #666;
+    white-space: nowrap;
+}

@@ -1,0 +1,217 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+._container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+._top-margin {
+    margin-top: 1em !important;
+}
+
+@media (min-width: 768px)
+{
+    ._container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px)
+{
+    ._container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px)
+{
+    ._container {
+        width: 1170px;
+    } 
+}
+._box-listing {
+    background: #FFF;
+    padding: 0.5em 0.7em;
+}
+._row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+._headContainer {
+    position: relative;
+    min-height: 2.65em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+._swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+._swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    box-sizing: content-box;
+    -webkit-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+}
+._swiper-container,  ._swiper-wrapper {
+    z-index: 0;
+}
+._carousel-container {
+    width: calc(100% - 1em);
+    height: 100%;
+    min-height: 10em;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+._section-title {
+    border-bottom: 1px solid #EEE;
+    margin: 1em 0.5em 1em 0.5em;
+    -webkit-user-select: initial;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+    user-select: initial;
+}
+._section-title h3 {
+    text-align: left !important;
+}
+._headContainer ._arrowNew {
+    position: absolute;
+    top: 0.25em;
+    bottom: 0.5em;
+    width: 2em;
+    height: 2em;
+    border: 2px solid #CCC;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+}
+._headContainer ._arrowNew._prev {
+    right: 3em;
+}
+._headContainer ._arrowNew._next {
+    right: 0.5em;
+}
+._carousel-container ._swiper-wrapper {
+    margin-left: -0.5em !important;
+}
+._swiper-slide {
+    -webkit-flex-shrink: 0;
+    -ms-flex: 0 0 auto;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+._playlistItem{
+    border: none;
+    cursor: pointer;
+    float: left;
+}
+a:visited, a:link, a:active {
+    text-decoration: none;
+    outline: none !important;
+}
+._carousel-container ._box {
+    width: 200px;
+    display: block;
+    border: none;
+}
+._carousel-container ._box._playlistItem {
+    width: 275px;
+}
+@media (max-width: 530px)
+{
+    ._carousel-container ._box._playlistItem {
+        width: 200px;
+    }
+}
+._playlistItem ._inner {
+    background: #FFF;
+    border: 1px solid #EEE;
+    position: relative;
+}
+a:visited ._inner, a:link ._inner, a:active ._inner {
+    border-color: #EEE !important;
+}
+._carousel-container ._box ._inner {
+    background: #FEFEFE;
+    -webkit-transition: box-shadow 200ms linear;
+    transition: box-shadow 200ms linear;
+    padding: 0.7em;
+    border: 1px solid #EEE;
+    position: relative;
+}
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+._img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+ ._playlistItem img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+._carousel-container .box img {
+    height: 100%;
+}
+._carousel-container ._box._playlistItem ._inner ._details {
+    padding: 0.1em;
+    padding-top: 9em;
+    height: auto;
+    margin: 0 !important;
+    text-align: left !important;
+    min-height: 5em;
+}
+@media (max-width: 530px)
+{
+    ._carousel-container ._box._playlistItem ._inner ._details {
+        padding-top: 6em;
+    } 
+}
+._carousel-container ._box._playlistItem ._inner ._title {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+._carousel-container ._box._playlistItem ._inner ._details ._title {
+    color: #92278f;
+}
+._carousel-container ._box._playlistItem ._inner ._details ._sub_title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+   color: #AAA;
+    font-size: 0.8em;
+}
+
+
+

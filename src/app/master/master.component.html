@@ -1,0 +1,43 @@
+
+<div id="plp">
+  <div>
+    <section id="category-banner-wrapper" class="_9ePPVKT">
+      <h1 class="_2Pqhc_O">
+        {{Type.Category.ResourceName}}
+      </h1>
+      <h3 class="_2Pqhc_O">
+        {{Type.ResourceName}}
+      </h3>
+    </section>
+    <div class="_27-R9uX">
+      <div class="_3JNRYc8">
+        <div class="zCgWNEA">
+          <div class="_3-pEc3l" data-auto-id="productList">
+            <section>
+              <article *ngFor="let deal of Type.Deals" id="product-10023558" class="_2oHs74P">
+                <a class="_3x-5VWa" routerLink='/detail/{{deal.Id}}'>
+                  <div class="_1FN5N-P">
+                    <img [src]="deal.DealPics[0].Url">
+                  </div>
+                  <div class="_2Raol8i">
+                    <div class="_10-bVn6">
+                      <div>
+                        <p>
+                          {{deal.ResourceName}}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="_6RF5CVD">
+                    <span class="_3iq1GRC"></span>
+                    <span class="_342BXW_">£85.00</span>
+                  </p>
+                </a>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

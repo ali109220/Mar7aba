@@ -1,0 +1,48 @@
+<section>
+  <div class="_container _top-margin">
+    <div class="_row _box-listing _top-margin">
+      <div>
+        <div class="_headContainer">
+          <div class="_section-title">
+            <h3>
+              Top Deals
+            </h3>
+          </div>
+          <div *ngIf="showButtons">
+            <div class="_arrowNew _prev">
+              <a class=" prev recs-carousel-arrow" (click)="translateX(false)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 12 20">
+                  <path fill-rule="evenodd" d="M10.0002222 0L0 9.9997778 10.0002222 20l1.6142581-1.6142581-8.4370764-8.3859641 8.4370764-8.4375209"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="_arrowNew _next">
+              <a class=" prev recs-carousel-arrow" (click)="translateX(true)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 12 20">
+                  <path fill-rule="evenodd" d="M1.5622222 0L0 1.5622222 8.3853333 10 0 18.3857778 1.5622222 20l10-10"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div  class="_swiper-container _carousel-container">
+          <div id="slider_Pics" class="_swiper-wrapper">
+            <a *ngFor="let deal of Deals" class="_box _playlistItem _swiper-slide" (swipeleft)="swipe($event.type)" (swiperight)="swipe($event.type)">
+              <div class="_inner">
+                <img class="_img-responsive" [src]="deal.DealPics[0].Url" routerLink='/detail/{{deal.Id}}'>
+                <div class="_details">
+                  <div class="_title ">
+                    {{deal.ResourceName}}
+                  </div>
+                  <div class="_sub_title">
+                    {{deal.ResourceDescription}}
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

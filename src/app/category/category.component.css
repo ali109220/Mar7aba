@@ -1,0 +1,22 @@
+._container{
+   margin: 100px 220px;
+}
+._row{
+   
+margin: 20px;
+}
+label{
+    padding-right: 65px;
+}
+._title{
+    padding-left: 100px;
+    padding-bottom: 10px;
+}
+textarea{
+    width: 240px;
+    height: 70px;
+}
+#resourceNameId{
+    width: 240px;
+    margin-left: 37px;
+}
